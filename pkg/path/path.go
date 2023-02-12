@@ -20,7 +20,7 @@ type P struct {
 
 func (c *Config) OpenPath(key string) {
 	// get key split by -
-	keys := strings.Split(key, "-")
+	keys := strings.Split(key, "/")
 	if p, has := c.Paths[keys[0]]; has {
 		absPath := p.Path
 		if !p.Absolute {
