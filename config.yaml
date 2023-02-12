@@ -1,0 +1,9 @@
+rootDirectory: "C:/Users/username" # this will be prependded to all paths unles otherwise set off
+paths:
+  d: # this is the alias here
+    path: "Documents"
+    absolute: false # wether the directory path to folder is absolute, if not the path is relative to the set root directory
+    children: # here we can specify nested folders for greater percision
+      s: # this is nested folder would be labeled d-s
+        path: "Code"
+        absolute: false
