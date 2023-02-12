@@ -10,7 +10,7 @@ import (
 
 func main() {
 	exPath, _ := os.Executable()
-	conf, err := config.Load(filepath.Join(exPath, "./config.yaml"))
+	conf, err := config.Load(filepath.Join(filepath.Dir(exPath), "./config.yaml"))
 	if err != nil {
 		log.Panic(err)
 	}
